@@ -2,7 +2,7 @@ layout(1)
 rm(list = ls())
 
 # read the data
-dat = read.csv("BodyFat.csv", row.names = 1)
+dat = read.csv("../data/BodyFat.csv", row.names = 1)
 
 # find some abnormal points which bodyfat does not have a linear relationship of 1 / density
 plot(y = dat$BODYFAT, x = 1 / dat$DENSITY, ylab = "bodyfat percentage", xlab = "body density", 
